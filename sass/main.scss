@@ -1,0 +1,35 @@
+$primary: #00007e;
+$warning: #f0de47;
+$light: #FAFF07;
+$success:#2a972a;
+.social:hover{
+    color:#143EA4;
+}
+@import'../node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Pattaya&display=swap');
+@import "./fontawesome/scss/fontawesome.scss";
+@import "./fontawesome/scss/solid.scss";
+@import "./fontawesome/scss/brands.scss";
+
+// for Duotones need both files
+@import "./fontawesome/scss/duotone.scss";
+@import "./fontawesome/scss/_duotone-icons.scss";
+
+:root{
+    --bs-body-font-family: 'Merriweather Sans', sans-serif;
+}
+.head{
+    font-family: 'Pattaya', sans-serif;
+}
+
+.hov:hover{
+    background-color:#143EA4;
+    text-decoration: underline;
+    border-radius: 2px;
+}
+
+small{
+    font-size: 1px;
+}
+
+
