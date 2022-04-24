@@ -1,16 +1,24 @@
 {
-  "name": "bootstrap-sbcc",
+  "name": "sbcc",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.8.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nnaqash/SBCC.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "bootstrap": "^5.1.3",
-    "bootstrap-icons": "^1.8.1"
-  }
+  "bugs": {
+    "url": "https://github.com/nnaqash/SBCC/issues"
+  },
+  "homepage": "https://github.com/nnaqash/SBCC#readme"
 }
