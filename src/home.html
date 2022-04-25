@@ -75,116 +75,11 @@
       <img src="/img/burn1.jpg">
     </div>
     <div class="button-container">
-      <div class="button">&#10140;</div>
+      <div class="button arrow">&#10140;</div>
       <div class="button">&#10140;</div>
     </div>
   </div>
-  <style>
-    /*  ##### ##### ##### ##### ##### ##### ##### ##### ##### */
-    /* HOME PAGE CAROUSEL */
-    /* // */
-    body {
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-    }
 
-    /*  ##### ##### ##### ##### ##### ##### ##### ##### ##### */
-    /* HOME PAGE CAROUSEL */
-    /* // */
-   /*  .items {
-      position: absolute;
-      left: 50%;
-      top:22rem;
-      transform: translate(-50%, -50%);
-      user-select: none;
-    }
-
-    .items .item {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 835px;
-      height: 350px; 
-      transform: translate(-50%, -55%);
-      overflow: hidden;
-      border-radius: 5px;
-      transition: all 500ms ease-in-out;
-      z-index: -1;
-      opacity: 0;
-    }
-
-    .item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .item.active {
-      opacity: 1;
-      z-index: 99;
-      box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.95);
-    }
-
-    .item.prev {
-      z-index: 2;
-      opacity: 0.25;
-      transform: translate(-110%, -60%);
-    }
-
-    .item.next {
-      z-index: 2;
-      opacity: 0.25;
-      transform: translate(10%, -60%);
-    }
-
-    .items .button-container {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 850px;
-      transform: translate(-50%, -50%);
-      z-index: 100;
-    }
-
-    .button-container .button {
-      color: #f0de47;
-      font-size: 32px;
-      cursor: pointer;
-      position: relative;
-      opacity: 0.75;
-      transition: all 300ms ease-in-out;
-    }
-
-    .button-container .button:hover {
-      opacity: 1;
-      color: #143EA4;
-    }
-
-    .button-container .button:before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 50px;
-      height: 50px;
-      background-color: rgba(0, 0, 0, 1);
-      border-radius: 50%;
-      z-index: -99;
-    }
-
-    .button-container .button:nth-child(1) {
-      float: left;
-    }
-
-    .button-container .button:nth-child(2) {
-      float: right;
-    } */
-
-    /* END OF HOME PAGE CAROUSEL */
-    /*  ##### ##### ##### ##### ##### ##### ##### ##### ##### */
-  </style>
   <script>
     const slider = document.querySelector(".items");
     const slides = document.querySelectorAll(".item");
@@ -231,6 +126,11 @@
   </script>
 
   <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
     p {
       margin: 0;
       text-align: justify;     
@@ -368,10 +268,6 @@
           Want to join the club?
         </h4>
   
-        <!--   <div class=" flex  justify-center ">
-                  <img class="w-60 qr " src="img/ReferralQRCode.png" alt="Referall QR Code" >
-              </div> -->
-  
         <p class="my-2 px-4 ">
           If you would like to join the club, follow the link or scan the QR code to fill out the <a class=""
             href="https://forms.gle/W7tA3rm9ucTeb99r8">Referral Form</a> and we
@@ -387,23 +283,23 @@
   
   <footer class="text-center text-lg-start text-warning bg-primary m-0 p-0">
     <!-- Grid container -->
-    <div class="container-fluid p-4 text-center">
+    <div class="container-fluid text-center pt-4">
       <!--Grid row-->
       <div class="row justify-content-center text-warning mb-0 pb-0">
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
           <h5 class="">Legal</h5>
           <ul class="list-unstyled mb-0 text-warning">
-            <li>
+            <li class="text-hover">
               <a href="/src/privacyPolicy.html" class="text-warning text-decoration-none" target="_blank">Privacy Policy
                 & Disclaimer</a>
             </li>
             <li>
-              <a href="/src/annualReports.html" class="text-warning text-decoration-none" target="_blank">Annual
+              <a href="/src/annualReports.html" class="text-warning text-decoration-none social" target="_blank">Annual
                 Reports</a>
             </li>
             <li>
-              <a href="/src/fundraising.html" class="text-warning text-decoration-none" target="_blank">Fundraising
+              <a href="/src/fundraising.html" class="text-warning text-decoration-none social" target="_blank">Fundraising
                 Practises</a>
             </li>
           </ul>
@@ -429,19 +325,19 @@
 
           <ul class="list-unstyled mb-0">
             <li class="social">
-              <a href="https://www.facebook.com/SBCC2001" class="text-warning social" target="_blank">
+              <a href="https://www.facebook.com/SBCC2001" class="text-warning" target="_blank">
                 <ion-icon class="social" name="logo-facebook"></ion-icon>
               </a>
             </li>
-            <li class="">
-              <a href="https://www.facebook.com/SBCC2001" class="text-warning social" target="_blank">
-                <ion-icon name="logo-instagram"></ion-icon>
+            <li class="social">
+              <a href="https://www.facebook.com/SBCC2001" class="text-warning" target="_blank">
+                <ion-icon class="social" name="logo-instagram"></ion-icon>
               </a>
 
             </li>
-            <li class="">
+            <li class="social">
               <a href="https://twitter.com/SBCC2001" class="text-warning" target="_blank">
-                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon class="social" name="logo-twitter"></ion-icon>
               </a>
 
             </li>
@@ -449,7 +345,7 @@
         </div>
         <hr>
       </div>
-      <div class="text-center p-3 fst-italic mt-0 pt-0 small">
+      <div class="text-center fst-italic mt-0 pt-0">
         <small>
           © 2022 Copyright Notice: All images displayed on this website is copyright of the Scottish Burned Children
           Club.

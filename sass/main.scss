@@ -2,16 +2,20 @@ $primary: #00007e;
 $warning: #f0de47;
 $light: #FAFF07;
 $success:#2a972a;
-.social:hover{
-    color:#143EA4;
-}
 
+.social:hover{
+    color:#3c73ff;
+    
+}
+@import'./carousel';
+@import'./about';
 
   /* END OF HOME PAGE CAROUSEL */
   /*  ##### ##### ##### ##### ##### ##### ##### ##### ##### */
 
 @import'../node_modules/bootstrap/scss/bootstrap.scss';
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Pattaya&display=swap');
+
 
 
 
@@ -29,13 +33,23 @@ $success:#2a972a;
     border-radius: 2px;
 }
 
-.small{
-    font-size: 1px;
+small{
+    font-size: 14px;
 }
+footer{
+    padding-bottom: 0px;
 
+}
+.arrow{
+    transform: rotate(180deg);
+}
+ul{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
 .items {
     position: absolute;
-    top:21rem;
+    top:20rem;
     left: 50%;
     transform: translate(-50%, -50%);
     user-select: none;
