@@ -8,6 +8,7 @@
 
   <!-- Bootstrap CSS -->
   <link href="/sass/main.min.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery.min.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
@@ -15,82 +16,8 @@
 </head>
 
 <body>
-  <!-- <div class="bg-primary text-warning text-center mx-auto order-0 align-middle sticky-top">
-    <a class="navbar-brand text-warning fs-1 fw-bold mb-0 pb-0 head mx-2" href="#">
-      <h1 class="d-inline-flex fs-1 fw-bold mb-0 pb-0 head mx-2  ">Scottish Burned Childern's Club</h1>
-      <img src="/img/SBCCLogoNotText.png" class="mb-0 pb-0 mt-2" style="position:absolute; padding-left:5px; margin-top: 2px;" alt="" width="62" height="69">
-    </a>
-    <nav class="navbar navbar-expand-lg navbar-light ">
-      <div class="container-fluid">
-        <button class="navbar-toggler text-success bg-warning " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-lg-0 mx-auto order-0 ">
-            <li class="nav-item hov">
-              <a class="nav-link active text-warning mt-0 pt-0 pb-0 mb-0 " aria-current="page"
-                href="/src/home.html">Home</a>
-            </li>
-            <li class="nav-item hov">
-              <a class="nav-link active text-warning mt-0 pt-0" aria-current="page" href="#">About Us</a>
-            </li>
+  <div id="nav-placeholder"></div>
 
-            <li class="nav-item hov">
-              <a class="nav-link active text-warning mt-0 pt-0" aria-current="page" href="/src/events.html">Events</a>
-            </li>
-            <li class="nav-item hov">
-              <a class="nav-link active text-warning mt-0 pt-0" aria-current="page" href="#">Updates</a>
-            </li>
-            <li class="nav-item hov">
-              <a class="nav-link active text-warning mt-0 pt-0" aria-current="page"
-                href="/src/safetyCampaigns.html">Safety Campaigns</a>
-            </li>
-            <li class="nav-item hov">
-              <a class="nav-link active text-warning mt-0 pt-0" aria-current="page" href="/src/supportUs.html">Support
-                Us</a>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-    </nav>
-  </div> -->
-
-  <nav class="bg-primary text-warning justify-content-center " id="navbar">
-    <div class="d-flex flex-row justify-content-center">
-      <div class="d-flex flex-column">
-        <!-- not finished for xs and sm, need to make hamburger menu  -->
-        <header>
-          <div class="text-center">
-            <a class="text-warning text-decoration-none head display-3" href="home.html">Scottish Burned Children's Club</a>
-            <img class="mx-5 mt-2" width="73" style="position: absolute;" src="/img/SBCCLogoNotText.png" />
-          </div>
-        </header>
-        <ul class="d-flex justify-content-center h6 list-unstyled">
-          <li class="">
-            <a class="hov text-warning text-decoration-none px-3 py-1 list" href="index.html" id="home">Home</a>
-          </li>
-          <li class="">
-            <a class="hov text-warning text-decoration-none px-3 py-1 list" href="AboutUs.html">About Us</a>
-          </li>
-          <li class="">
-            <a class="hov text-warning text-decoration-none px-3 py-1 list" href="Events.html">Events</a>
-          </li>
-          <li class="">
-            <a class="hov text-warning text-decoration-none px-3 py-1 list" href="Updates.html">Updates</a>
-          </li>
-          <li class="">
-            <a class="hov text-warning text-decoration-none px-3 py-1 list" href="safteyCampaigns.html">Safety&nbsp; Campaigns</a>
-          </li>
-          <li class="">
-            <a class="hov text-warning text-decoration-none px-3 py-1 list" href="SupportUs.html">Support Us</a>
-          </li>
-        </ul>
-      </div>
-   
-    </div>
-  </nav>
 
   <div class="items">
     <div class="item active">
@@ -170,11 +97,18 @@
       text-align: justify;     
     }
     .container{
-      padding-top: 23%;
+      padding-top: 25%;
+    }   
+    #donatebtn-placeholder{
+      top:485px;
     }
+ 
   </style>
+  <div class="sticky-top">
+    <div id="donatebtn-placeholder" class="donatebtn"></div>
+  </div>
   
-    <div class="container">
+    <div class="container">      
       <h2 class="my-4 px-4 fw-bold text-primary ">
         Be Curious, Not Judgemental!
       </h2>
@@ -309,88 +243,13 @@
         </p>
   
         <div class="text-center">
-          <img class="" src="/img/ReferralQRCode.png" alt="Referall QR Code" width="150" height="150">
+          <img class="QR" src="/img/ReferralQRCode.png" alt="Referall QR Code" width="192">
         </div>
       </div>
     </div>
 
   
-  <footer class="text-center text-lg-start text-warning bg-primary m-0 p-0">
-    <!-- Grid container -->
-    <div class="container-fluid text-center pt-4">
-      <!--Grid row-->
-      <div class="row justify-content-center text-warning mb-0 pb-0">
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="">Legal</h5>
-          <ul class="list-unstyled mb-0 text-warning">
-            <li class="text-hover">
-              <a href="/src/privacyPolicy.html" class="text-warning text-decoration-none" target="_blank">Privacy Policy
-                & Disclaimer</a>
-            </li>
-            <li>
-              <a href="/src/annualReports.html" class="text-warning text-decoration-none social" target="_blank">Annual
-                Reports</a>
-            </li>
-            <li>
-              <a href="/src/fundraising.html" class="text-warning text-decoration-none social" target="_blank">Fundraising
-                Practises</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="">Contact Us</h5>
-
-          <ul class="list-unstyled">
-            <li class="mt-2">
-              <a href="#!" class="text-warning text-decoration-none mt-2 p-4">Ph.No:89327694</a>
-            </li>
-            <li>
-              <a href="#!" class="text-warning text-decoration-none">Email: burnclub@club.co.uk </a>
-            </li>
-            <li>
-              <a href="#!" class="text-warning text-decoration-none">P.O.Box: xxxxxx</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="">Follow Us</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li class="social">
-              <a href="https://www.facebook.com/SBCC2001" class="text-warning" target="_blank">
-                <ion-icon class="social" name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-            <li class="social">
-              <a href="https://www.facebook.com/SBCC2001" class="text-warning" target="_blank">
-                <ion-icon class="social" name="logo-instagram"></ion-icon>
-              </a>
-
-            </li>
-            <li class="social">
-              <a href="https://twitter.com/SBCC2001" class="text-warning" target="_blank">
-                <ion-icon class="social" name="logo-twitter"></ion-icon>
-              </a>
-
-            </li>
-          </ul>
-        </div>
-        <hr>
-      </div>
-      <div class="text-center fst-italic mt-0 pt-0">
-        <small>
-          © 2022 Copyright Notice: All images displayed on this website is copyright of the Scottish Burned Children
-          Club.
-          No downloading, screen captures, storages, alteration, reproduction, or distribution, in any manner of form,
-          is permitted without the express written consent of the copyright holder. If you have any queries related to
-          images, you may contact the copyright holder at enquiries@theburnsclub.org.uk.
-        </small>
-      </div>
-    </div>
-  </footer>
-
+    <div id="footer-placeholder"></div>
 
 
   <!-- Optional JavaScript; choose one of the two! -->
@@ -408,38 +267,22 @@
       -->
 
 </body>
+<script>
+  $(function () {
+      $("#nav-placeholder").load("/components/nav.html");
+  });
+
+
+  $(function () {
+      $("#footer-placeholder").load("/components/footer.html");
+  });
+
+
+  $(function () {
+      $("#donatebtn-placeholder").load("/components/donate.html");
+  });
+</script>
 
 </html>
 
 
-<!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="/img/burn8.png" class="d-block w-100 " alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="/img/burn9.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="/img/burn1.jpg" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div> -->
