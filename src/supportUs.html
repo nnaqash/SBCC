@@ -27,9 +27,12 @@
       text-align: justify;
     }
   </style>
-  <div class="sticky-top sidebar">
-    <div id="donatebtn-placeholder" class="donatebtn"></div>
-  </div>
+  
+    <div class="sideTabs"> 
+      <div id="donatebtn-placeholder" class="donatebtn"></div>
+      <div id="upcoming-placeholder"></div>
+    </div>
+
   
   <div class="container">
     <div class="row  gx-5">     
@@ -192,6 +195,10 @@
 
   $(function () {
       $("#donatebtn-placeholder").load("/components/donate.html");
+  });
+
+  $(function () {
+    $("#upcoming-placeholder").load("/components/upcoming.html");
   });
 </script>
 </html>

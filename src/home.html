@@ -11,6 +11,7 @@
   <script src="//code.jquery.com/jquery.min.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ 
 
   <title>SBCC</title>
 </head>
@@ -87,169 +88,200 @@
   </script>
 
   <style>
-    body {
+    body 
+    {
       margin: 0;
       padding: 0;
       overflow-x: hidden;
     }
-    p {
+
+    p 
+    {
       margin: 0;
-      text-align: justify;     
+      text-align: justify;
     }
-    .container{
+
+    .container 
+    {
       padding-top: 25%;
-    }   
-    #donatebtn-placeholder{
-      top:485px;
     }
- 
+
+    .sideTabs
+    {
+      top: 500px;
+    }
+
   </style>
-  <div class="sticky-top">
+
+  <div class="sideTabs"> 
     <div id="donatebtn-placeholder" class="donatebtn"></div>
+    <div id="upcoming-placeholder"></div>
   </div>
-  
-    <div class="container">      
-      <h2 class="my-4 px-4 fw-bold text-primary ">
-        Be Curious, Not Judgemental!
-      </h2>
-  
-      <div class=" ">
-        <!-- content -->
-        <h4 class="fw-bold px-4 text-primary">
-          What is the Scottish Burned Children's Club [SBCC]?
-        </h4>
-  
-        <p class="my-2 px-4">
-          Launched in 2001, the SBCC provides a network of support to burn survivor children [under the age of
-          18] and
-          their
-          families dealing with the lifelong scars of burn and scald injuries.
-          <br><br>
-          We provide positive support to burn-injured children and help them realise that, although their body
-          image has
-          been altered, their hopes and dreams are just as achievable as any other child’s.
-        </p>
-      </div>
-  
-      <div>
-        <!-- content -->
-        <h4 class="mt-6 fw-bold px-4 text-primary">
-          What are our aims?
-        </h4>
-  
-        <p class="my-2 px-4 ">
-          The main aims of the charity are twofold, firstly to help in the rehabilitation process of these
-          children and to
-          provide
-          support to their family.
-          <br><br>
-          Secondly, to play a key role in the reduction of such injuries by raising awareness of the problem
-          and promoting
-          safe
-          practice in relation to the dangers associated with burns and scalds.
-        </p>
-      </div>
-  
-      <div>
-        <!-- content -->
-        <h4 class="mt-6 fw-bold px-4 text-primary">
-          Why have a burns club?
-        </h4>
-  
-        <p class="my-2 px-4 ">
-          Burn and scald accidents are one of the most horrific and painful injuries that can occur to anyone,
-          not only do
-          they produce
-          physical trauma but also result in psychological trauma. When a child is injured the whole family is
-          affected.
-          Unlike any other
-          injury, burns and scalds leave a lifelong scar, which no matter how small or big act as a reminder
-          to the family
-          as well as the
-          child of the trauma they have been through.
-          <br><br>
-          The child must also grow up knowing their body image is different, knocking their confidence at a
-          time when
-          normal processes of
-          growing up are stressful enough. Positive support is required to help the burn survivors realise
-          that although
-          body image has been
-          altered their hopes and dreams are still the same as any other child and just as achievable. With
-          continued
-          support, positive
-          encouragement and the courage and determination that has helped them so far we hope to see each
-          child realise
-          their dreams and goals.
-          <br><br>
-          <b class="text-right !important text-primary">
-            The club is open to children under the age of eighteen. If your child or you know of a child
-            that would
-            benefit from what our charity
-            has to offer, please:<br>Telephone: 07486 515999 or Email: enquiries@theburnsclub.org.uk for
-            more information.
-          </b>
-        </p>
-      </div>
-  
-      <div>
-        <!-- content -->
-        <h4 class="mt-6 fw-bold px-4 text-primary">
-          How does the charity assist burned children?
-        </h4>
-  
-        <p class="my-2 px-4 ">
-          The Scottish Burned Children's club organises a series of day trips, special events and visits to
-          various
-          organisations throughout
-          the year for the children and their families. The highlight of our social calendar is a week long
-          'rehabilitation' camp, for the
-          8 to 18-year-old children. It is a fantastic opportunity for the youngsters to meet up with each
-          other to talk,
-          share experiences
-          and to make friends with others in a similar situation, but above all to have fun.
-        </p>
-      </div>
-  
-      <div>
-        <!-- content -->
-        <h4 class="mt-6 fw-bold px-4 text-primary">
-          How is the club funded?
-        </h4>
-  
-        <p class="my-2 px-4 ">
-          All of this takes commitment and money in order that as many children as possible are given the
-          opportunity to
-          take part. The Scottish
-          Burned Children's Club is solely funded by fundraising events, sponsorship and donations and is run
-          and
-          organised by a group of 'unpaid'
-          volunteers. Our team is passionate, committed and dedicated to supporting the children and their
-          families,
-          however, we are continuously
-          looking for help and support.
-        </p>
-      </div>
-  
-      <div>
-        <!-- content -->
-        <h4 class="mt-6 fw-bold px-4 text-primary">
-          Want to join the club?
-        </h4>
-  
-        <p class="my-2 px-4 ">
-          If you would like to join the club, follow the link or scan the QR code to fill out the <a class=""
-            href="https://forms.gle/W7tA3rm9ucTeb99r8">Referral Form</a> and we
-          will be in contact with you as soon as possible. The form can be completed online.
-        </p>
-  
-        <div class="text-center">
-          <img class="QR" src="/img/ReferralQRCode.png" alt="Referall QR Code" width="192">
-        </div>
-      </div>
+
+ 
+  <div class="container">
+    <h2 class="my-4 px-4 fw-bold text-primary">
+      Be Curious, Not Judgemental!
+    </h2>
+
+    <div class="">
+      <!-- content -->
+      <h4 class="fw-bold px-4 text-primary">
+        What is the Scottish Burned Children's Club [SBCC]?
+      </h4>
+
+      <p class="my-2 px-4">
+        Launched in 2001, the SBCC provides a network of support to burn survivor children [under the age of
+        18] and
+        their
+        families dealing with the lifelong scars of burn and scald injuries.
+        <br><br>
+        We provide positive support to burn-injured children and help them realise that, although their body
+        image has
+        been altered, their hopes and dreams are just as achievable as any other child’s.
+      </p>
     </div>
 
-  
-    <div id="footer-placeholder"></div>
+    <div>
+      <!-- content -->
+      <h4 class="mt-6 fw-bold px-4 text-primary">
+        What are our aims?
+      </h4>
+
+      <p class="my-2 px-4 ">
+        The main aims of the charity are twofold, firstly to help in the rehabilitation process of these
+        children and to
+        provide
+        support to their family.
+        <br><br>
+        Secondly, to play a key role in the reduction of such injuries by raising awareness of the problem
+        and promoting
+        safe
+        practice in relation to the dangers associated with burns and scalds.
+      </p>
+    </div>
+
+    <div>
+      <!-- content -->
+      <h4 class="mt-6 fw-bold px-4 text-primary">
+        Why have a burns club?
+      </h4>
+
+      <p class="my-2 px-4 ">
+        Burn and scald accidents are one of the most horrific and painful injuries that can occur to anyone,
+        not only do
+        they produce
+        physical trauma but also result in psychological trauma. When a child is injured the whole family is
+        affected.
+        Unlike any other
+        injury, burns and scalds leave a lifelong scar, which no matter how small or big act as a reminder
+        to the family
+        as well as the
+        child of the trauma they have been through.
+        <br><br>
+        The child must also grow up knowing their body image is different, knocking their confidence at a
+        time when
+        normal processes of
+        growing up are stressful enough. Positive support is required to help the burn survivors realise
+        that although
+        body image has been
+        altered their hopes and dreams are still the same as any other child and just as achievable. With
+        continued
+        support, positive
+        encouragement and the courage and determination that has helped them so far we hope to see each
+        child realise
+        their dreams and goals.
+        <br><br>
+        <b class="text-right !important text-primary">
+          The club is open to children under the age of eighteen. If your child or you know of a child
+          that would
+          benefit from what our charity
+          has to offer, please:<br>Telephone: 07486 515999 or Email: enquiries@theburnsclub.org.uk for
+          more information.
+        </b>
+      </p>
+    </div>
+    <style>
+      
+      .imageitem {
+        width: 1400px;
+        height: 350px;
+        overflow: hidden;
+        border-radius: 5px;
+        z-index: -1;
+      }
+
+      .imageitem img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    
+    </style>
+
+    <div class="imageitem mb-3" style="margin-left: 40px;">
+      <img src="/img/sbccphoto.jpg">
+    </div>
+    <!-- <img src="/img/sbccphoto.jpg" style="object-fit: contain;" width="1000px" height="450px"> -->
+
+    <div>
+      <!-- content -->
+      <h4 class="mt-6 fw-bold px-4 text-primary">
+        How does the charity assist burned children?
+      </h4>
+
+      <p class="my-2 px-4 ">
+        The Scottish Burned Children's club organises a series of day trips, special events and visits to
+        various
+        organisations throughout
+        the year for the children and their families. The highlight of our social calendar is a week long
+        'rehabilitation' camp, for the
+        8 to 18-year-old children. It is a fantastic opportunity for the youngsters to meet up with each
+        other to talk,
+        share experiences
+        and to make friends with others in a similar situation, but above all to have fun.
+      </p>
+    </div>
+
+    <div>
+      <!-- content -->
+      <h4 class="mt-6 fw-bold px-4 text-primary">
+        How is the club funded?
+      </h4>
+
+      <p class="my-2 px-4 ">
+        All of this takes commitment and money in order that as many children as possible are given the
+        opportunity to
+        take part. The Scottish
+        Burned Children's Club is solely funded by fundraising events, sponsorship and donations and is run
+        and
+        organised by a group of 'unpaid'
+        volunteers. Our team is passionate, committed and dedicated to supporting the children and their
+        families,
+        however, we are continuously
+        looking for help and support.
+      </p>
+    </div>
+
+    <div>
+      <!-- content -->
+      <h4 class="mt-6 fw-bold px-4 text-primary">
+        Want to join the club?
+      </h4>
+
+      <p class="my-2 px-4 ">
+        If you would like to join the club, follow the link or scan the QR code to fill out the <a class=""
+          href="https://forms.gle/W7tA3rm9ucTeb99r8">Referral Form</a> and we
+        will be in contact with you as soon as possible. The form can be completed online.
+      </p>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <img class="QR" src="/img/ReferralQRCode.png" alt="Referall QR Code" width="192">
+  </div>
+
+  <div id="footer-placeholder"></div>
 
 
   <!-- Optional JavaScript; choose one of the two! -->
@@ -269,20 +301,20 @@
 </body>
 <script>
   $(function () {
-      $("#nav-placeholder").load("/components/nav.html");
+    $("#nav-placeholder").load("/components/nav.html");
   });
 
-
   $(function () {
-      $("#footer-placeholder").load("/components/footer.html");
+    $("#footer-placeholder").load("/components/footer.html");
   });
 
+  $(function () {
+    $("#donatebtn-placeholder").load("/components/donate.html");
+  });
 
   $(function () {
-      $("#donatebtn-placeholder").load("/components/donate.html");
+    $("#upcoming-placeholder").load("/components/upcoming.html");
   });
 </script>
 
 </html>
-
-
