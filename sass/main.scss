@@ -1,84 +1,80 @@
 $primary: #00007e;
 $warning: #f0de47;
-$light: #FAFF07;
-$success:#2a972a;
-$info:#4ed0ed;
+$light: #FFFFFF;
+$success: #2a972a;
+$info: #4ed0ed;
 
-.social:hover{
-    color:#3c73ff;
-    
+.social:hover {
+  color: #3c73ff;
 }
-@import'./carousel';
-@import'./about';
-@import'./donate';
+@import "./carousel";
+@import "./about";
+@import "./donate";
 
-  /* END OF HOME PAGE CAROUSEL */
-  /*  ##### ##### ##### ##### ##### ##### ##### ##### ##### */
+/* END OF HOME PAGE CAROUSEL */
+/*  ##### ##### ##### ##### ##### ##### ##### ##### ##### */
 
-@import'../node_modules/bootstrap/scss/bootstrap.scss';
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Pattaya&display=swap');
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Pattaya&display=swap");
 
-:root{
-    --bs-body-font-family: 'Merriweather Sans', sans-serif;
-}
-
-.head{
-    font-family: 'Pattaya', sans-serif;
-    justify-self: center;
+:root {
+  --bs-body-font-family: "Merriweather Sans", sans-serif;
 }
 
-.hov:hover{
-    background-color:#143EA4;
-    text-decoration: none;
-    border-radius: 15px;
+.head {
+  font-family: "Pattaya", sans-serif;
+  justify-self: center;
 }
 
-.list{
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+.hov:hover {
+  background-color: #143ea4;
+  text-decoration: none;
+  border-radius: 15px;
 }
 
-small
-{
-    font-size: 14px;
+.list {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
-footer
-{
-    padding-bottom: 0px;
+small {
+  font-size: 14px;
 }
 
-.arrow
-{
-    transform: rotate(180deg);
+footer {
+  padding-bottom: 0px;
 }
 
-ul{
-    padding-bottom: 0;
-    margin-bottom: 0;
+.arrow {
+  transform: rotate(180deg);
 }
 
-.container
-{
+ul {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.container {
   padding-top: 6%;
   margin-left: 6rem;
   max-width: 1500px;
-}   
+}
 
-.sidebar
-{
+.sidebar {
   padding-top: 5rem;
 }
 
-.sideTabs
-{
-  position: absolute;
-  right: 7rem;
+.stickyTab {
+  position: sticky;
   top: 150px;
-}
 
-.sideTabs #upcoming
-{
-  top:50px;
-  background-color: #00007e;
-};
+  .sideTabs {
+    position: absolute;
+    right: 7rem;
+
+    #upcoming {
+      top: 50px;
+      background-color: #00007e;
+    }
+  }
+}
