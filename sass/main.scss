@@ -1,12 +1,17 @@
-$primary: #00007e;
-$warning: #f0de47;
-$light: #FFFFFF;
-$success: #2a972a;
-$info: #4ed0ed;
+$primary:             #00007e;
+$warning:             #f0de47;
+$light:               #FFFFFF;
+$success:             #2a972a;
+$info:                #4ed0ed;
+$dropdown-dark-bg:      $primary;
+$dropdown-dark-color:   $warning;
+$dropdown-min-width:    8rem;
+$dropdown-padding-y:    0;
 
 .social:hover {
   color: #3c73ff;
 }
+
 @import "./carousel";
 @import "./about";
 @import "./donate";
@@ -62,6 +67,12 @@ ul {
 
 .sidebar {
   padding-top: 5rem;
+}
+
+.dropdown-menu-dark
+{
+  border-top-left-radius: 0rem;
+  border-top-right-radius: 0rem;
 }
 
 .stickyTab {
