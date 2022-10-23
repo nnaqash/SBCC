@@ -13,13 +13,18 @@
             <a class="hov text-warning text-decoration-none px-3 py-1 list" href="/index.html">Home</a>
           </li>
           <li class="">
-            <a class="hov text-warning text-decoration-none px-3 py-1 list" href="/src/aboutUs.html">About Us</a>
+            <a class="dropdown-toggle hov text-warning text-decoration-none px-3 py-1 list" role="button" id="auDropdown" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="auDropdown">
+              <li><a class="dropdown-item" href="/src/aboutUs.html">Volunteers</a></li>
+              <li><a class="dropdown-item" href="/src/auhelpers.html">Helpers</a></li>
+            </ul>
           </li>
           <!-- Events dropdown menu -->
           <li class="">
-            <a class="dropdown-toggle hov text-warning text-decoration-none px-3 py-1 list" role="button" id="homeDropdown" data-bs-toggle="dropdown" aria-expanded="false">Events</a>
+            <a class="dropdown-toggle hov text-warning text-decoration-none px-3 py-1 list" role="button" id="eventsDropdown" data-bs-toggle="dropdown" aria-expanded="false">Events</a>
 
-            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="homeDropdown">
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="eventsDropdown">
               <li><a class="dropdown-item" href="/src/events.html">Fundraising</a></li>
               <li><a class="dropdown-item" href="/src/events.html">Family</a></li>
               <li><a class="dropdown-item" href="/src/events.html">Previous</a></li>

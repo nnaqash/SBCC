@@ -2,319 +2,323 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap CSS -->
-  <link href="/sass/main.min.css" rel="stylesheet">
-  <script src="//code.jquery.com/jquery.min.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
- 
+    <!-- Bootstrap CSS -->
+    <link href="/sass/main.min.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-  <title>SBCC</title>
+
+    <title>SBCC</title>
 </head>
 
 <body>
-  <div id="nav-placeholder"></div>
-  <div class="items">
-    <div class="item active">
-      <img src="/img/burn6.png">
-    </div>
-    <div class="item next">
-      <img src="/img/burn8.png">
-    </div>
-    <div class="item">
-      <img src="/img/burn9.png">
-    </div>
-    <div class="item">
-      <img src="/img/claire.jpg">
-    </div>
-    <div class="item prev">
-      <img src="/img/burn1.jpg">
-    </div>
-    <div class="button-container">
-      <div class="button arrow">&#10140;</div>
-      <div class="button">&#10140;</div>
-    </div>
-  </div>
+    <div id="nav-placeholder"></div>
 
-  <script>
-    const slider = document.querySelector(".items");
-    const slides = document.querySelectorAll(".item");
-    const button = document.querySelectorAll(".button");
-
-    let current = 0;
-    let prev = slides.length - 1;
-    let next = 1;
-
-    for (let i = 0; i < button.length; i++) {
-      button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
-
-    }
-
-    const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
-
-    const gotoNext = () => current < (slides.length - 1) ? gotoNum(current + 1) : gotoNum(0);
-
-    const gotoNum = number => {
-
-      current = number;
-      prev = current - 1;
-      next = current + 1;
-
-      for (let i = 0; i < slides.length; i++) {
-        slides[i].classList.remove("active");
-        slides[i].classList.remove("prev");
-        slides[i].classList.remove("next");
-      }
-
-      if (next == slides.length) {
-        next = 0;
-      }
-
-      if (prev == -1) {
-        prev = (slides.length - 1);
-      }
-
-      slides[current].classList.add("active");
-      slides[prev].classList.add("prev");
-      slides[next].classList.add("next");
-    }
-
-  </script>
-
-  <style>
-    body 
-    {
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-    }
-
-    p 
-    {
-      margin: 0;
-      text-align: justify;
-    }
-
-    .container 
-    {
-      padding-top: 25%;
-    }
-
-    .stickyTab
-    {
-      top: 500px;
-    }
-
-  </style>
-
-    <div class="stickyTab">
-      <div class="sideTabs"> 
-        <div id="donatebtn-placeholder" class="donatebtn"></div>
-        <div id="upcoming-placeholder"></div>
-      </div>
-    </div>
- 
-  <div class="container">
-    <h2 class="my-4 px-4 fw-bold text-primary">
-      Be Curious, Not Judgemental!
-    </h2>
-
-    <div class="">
-      <!-- content -->
-      <h4 class="fw-bold px-4 text-primary">
-        What is the Scottish Burned Children's Club [SBCC]?
-      </h4>
-
-      <p class="my-2 px-4">
-        Launched in 2001, the SBCC provides a network of support to burn survivor children [under the age of
-        18] and
-        their
-        families dealing with the lifelong scars of burn and scald injuries.
-        <br><br>
-        We provide positive support to burn-injured children and help them realise that, although their body
-        image has
-        been altered, their hopes and dreams are just as achievable as any other child’s.
-      </p>
-    </div>
-
-    <div>
-      <!-- content -->
-      <h4 class="mt-6 fw-bold px-4 text-primary">
-        What are our aims?
-      </h4>
-
-      <p class="my-2 px-4 ">
-        The main aims of the charity are twofold, firstly to help in the rehabilitation process of these
-        children and to
-        provide
-        support to their family.
-        <br><br>
-        Secondly, to play a key role in the reduction of such injuries by raising awareness of the problem
-        and promoting
-        safe
-        practice in relation to the dangers associated with burns and scalds.
-      </p>
-    </div>
-
-    <div>
-      <!-- content -->
-      <h4 class="mt-6 fw-bold px-4 text-primary">
-        Why have a burns club?
-      </h4>
-
-      <p class="my-2 px-4 ">
-        Burn and scald accidents are one of the most horrific and painful injuries that can occur to anyone,
-        not only do
-        they produce
-        physical trauma but also result in psychological trauma. When a child is injured the whole family is
-        affected.
-        Unlike any other
-        injury, burns and scalds leave a lifelong scar, which no matter how small or big act as a reminder
-        to the family
-        as well as the
-        child of the trauma they have been through.
-        <br><br>
-        The child must also grow up knowing their body image is different, knocking their confidence at a
-        time when
-        normal processes of
-        growing up are stressful enough. Positive support is required to help the burn survivors realise
-        that although
-        body image has been
-        altered their hopes and dreams are still the same as any other child and just as achievable. With
-        continued
-        support, positive
-        encouragement and the courage and determination that has helped them so far we hope to see each
-        child realise
-        their dreams and goals.
-        <br>
-        <div class="bg-primary mx-4 rounded mb-3 ps-1">
-          <b class="text-right text-warning fs-4">
-            If your child or you know of a child [under the age of 18 years old] that would
-            benefit from what our charity has to offer, please telephone: 07486 515999 or email: enquiries@theburnsclub.org.uk for
-            more information.
-          </b>
+    <div class="items">
+        <div class="item active">
+            <img src="/img/burn6.png">
         </div>
-        
-      </p>
+        <div class="item next">
+            <img src="/img/burn8.png">
+        </div>
+        <div class="item">
+            <img src="/img/burn9.png">
+        </div>
+        <div class="item">
+            <img src="/img/claire.jpg">
+        </div>
+        <div class="item prev">
+            <img src="/img/burn1.jpg">
+        </div>
+        <div class="button-container">
+            <div class="button arrow">&#10140;</div>
+            <div class="button">&#10140;</div>
+        </div>
     </div>
-    <style>
-      
-      .imageitem {
-        width: 1400px;
-        height: 350px;
-        overflow: hidden;
-        border-radius: 5px;
-        z-index: -1;
-      }
 
-      .imageitem img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    
+    <script>
+        const slider = document.querySelector(".items");
+        const slides = document.querySelectorAll(".item");
+        const button = document.querySelectorAll(".button");
+
+        let current = 0;
+        let prev = slides.length - 1;
+        let next = 1;
+
+        for (let i = 0; i < button.length; i++) 
+        {
+            button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
+        }
+
+        const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
+
+        const gotoNext = () => current < (slides.length - 1) ? gotoNum(current + 1) : gotoNum(0);
+
+        const gotoNum = number => {
+
+            current = number;
+            prev = current - 1;
+            next = current + 1;
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+                slides[i].classList.remove("prev");
+                slides[i].classList.remove("next");
+            }
+
+            if (next == slides.length) {
+                next = 0;
+            }
+
+            if (prev == -1) {
+                prev = (slides.length - 1);
+            }
+
+            slides[current].classList.add("active");
+            slides[prev].classList.add("prev");
+            slides[next].classList.add("next");
+        }
+
+    </script>
+
+    <style>
+        body 
+        {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        p 
+        {
+            margin: 0;
+            text-align: justify;
+        }
+
+        .container 
+        {
+            padding-top: 25%;
+        }
+
+        .stickyTab 
+        {
+            top: 500px;
+        }
     </style>
 
-    <div class="imageitem mb-3" style="margin-left: 40px;">
-      <img src="/img/sbccphoto.jpg">
-    </div>
-    <!-- <img src="/img/sbccphoto.jpg" style="object-fit: contain;" width="1000px" height="450px"> -->
-
-    <div>
-      <!-- content -->
-      <h4 class="mt-6 fw-bold px-4 text-primary">
-        How does the charity assist burned children?
-      </h4>
-
-      <p class="my-2 px-4 ">
-        The Scottish Burned Children's club organises a series of day trips, special events and visits to
-        various
-        organisations throughout
-        the year for the children and their families. The highlight of our social calendar is a week long
-        'rehabilitation' camp, for the
-        8 to 18-year-old children. It is a fantastic opportunity for the youngsters to meet up with each
-        other to talk,
-        share experiences
-        and to make friends with others in a similar situation, but above all to have fun.
-      </p>
+    <div class="stickyTab">
+        <div class="sideTabs">
+            <div id="donatebtn-placeholder" class="donatebtn"></div>
+            <div id="upcoming-placeholder"></div>
+        </div>
     </div>
 
-    <div>
-      <!-- content -->
-      <h4 class="mt-6 fw-bold px-4 text-primary">
-        How is the club funded?
-      </h4>
+    <div class="container">
+        <h1 class="my-4 fw-bold text-primary">
+            Be Curious, Not Judgemental!
+        </h1>
 
-      <p class="my-2 px-4 ">
-        All of this takes commitment and money in order that as many children as possible are given the
-        opportunity to
-        take part. The Scottish
-        Burned Children's Club is solely funded by fundraising events, sponsorship and donations and is run
-        and
-        organised by a group of 'unpaid'
-        volunteers. Our team is passionate, committed and dedicated to supporting the children and their
-        families,
-        however, we are continuously
-        looking for help and support.
-      </p>
+        <div class="">
+            <!-- content -->
+            <h4 class="fw-bold text-primary">
+                What is the Scottish Burned Children's Club [SBCC]?
+            </h4>
+
+            <p class="my-2">
+                Launched in 2001, the SBCC provides a network of support to burn survivor children [under the age of
+                18] and
+                their
+                families dealing with the lifelong scars of burn and scald injuries.
+                <br><br>
+                We provide positive support to burn-injured children and help them realise that, although their body
+                image has
+                been altered, their hopes and dreams are just as achievable as any other child’s.
+            </p>
+        </div>
+
+        <div>
+            <!-- content -->
+            <h4 class="mt-6 fw-bold text-primary">
+                What are our aims?
+            </h4>
+
+            <p class="my-2 ">
+                The main aims of the charity are twofold, firstly to help in the rehabilitation process of these
+                children and to
+                provide
+                support to their family.
+                <br><br>
+                Secondly, to play a key role in the reduction of such injuries by raising awareness of the problem
+                and promoting
+                safe
+                practice in relation to the dangers associated with burns and scalds.
+            </p>
+        </div>
+
+        <div>
+            <!-- content -->
+            <h4 class="mt-6 fw-bold text-primary">
+                Why have a burns club?
+            </h4>
+
+            <p class="my-2">
+                Burn and scald accidents are one of the most horrific and painful injuries that can occur to anyone,
+                not only do
+                they produce
+                physical trauma but also result in psychological trauma. When a child is injured the whole family is
+                affected.
+                Unlike any other
+                injury, burns and scalds leave a lifelong scar, which no matter how small or big act as a reminder
+                to the family
+                as well as the
+                child of the trauma they have been through.
+                <br><br>
+                The child must also grow up knowing their body image is different, knocking their confidence at a
+                time when
+                normal processes of
+                growing up are stressful enough. Positive support is required to help the burn survivors realise
+                that although
+                body image has been
+                altered their hopes and dreams are still the same as any other child and just as achievable. With
+                continued
+                support, positive
+                encouragement and the courage and determination that has helped them so far we hope to see each
+                child realise
+                their dreams and goals.
+                <br>
+
+            <div class="bg-primary rounded mb-3 ps-1">
+                <b class="text-right text-warning fs-4">
+                    If your child or you know of a child [under the age of 18 years old] that would
+                    benefit from what our charity has to offer, please telephone: 07486 515999 or email:
+                    enquiries@theburnsclub.org.uk for
+                    more information.
+                </b>
+            </div>
+
+            </p>
+        </div>
+        <style>
+            .imageitem {
+                width: 1400px;
+                height: 350px;
+                overflow: hidden;
+                border-radius: 5px;
+                z-index: -1;
+            }
+
+            .imageitem img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        </style>
+
+        <div class="imageitem mb-3" style="margin-left: 40px;">
+            <img src="/img/sbccphoto.jpg">
+        </div>
+        <!-- <img src="/img/sbccphoto.jpg" style="object-fit: contain;" width="1000px" height="450px"> -->
+
+        <div>
+            <!-- content -->
+            <h4 class="mt-6 fw-bold text-primary">
+                How does the charity assist burned children?
+            </h4>
+
+            <p class="my-2">
+                The Scottish Burned Children's club organises a series of day trips, special events and visits to
+                various
+                organisations throughout
+                the year for the children and their families. The highlight of our social calendar is a week long
+                'rehabilitation' camp, for the
+                8 to 18-year-old children. It is a fantastic opportunity for the youngsters to meet up with each
+                other to talk,
+                share experiences
+                and to make friends with others in a similar situation, but above all to have fun.
+            </p>
+        </div>
+
+        <div>
+            <!-- content -->
+            <h4 class="mt-6 fw-bold text-primary">
+                How is the club funded?
+            </h4>
+
+            <p class="my-2">
+                All of this takes commitment and money in order that as many children as possible are given the
+                opportunity to
+                take part. The Scottish
+                Burned Children's Club is solely funded by fundraising events, sponsorship and donations and is run
+                and
+                organised by a group of 'unpaid'
+                volunteers. Our team is passionate, committed and dedicated to supporting the children and their
+                families,
+                however, we are continuously
+                looking for help and support.
+            </p>
+        </div>
+
+        <div>
+            <!-- content -->
+            <h4 class="mt-6 fw-bold text-primary">
+                Want to join the club?
+            </h4>
+
+            <p class="my-2">
+                If you would like to join the club, follow the link or scan the QR code to fill out the <a class=""
+                    href="https://forms.gle/W7tA3rm9ucTeb99r8">Referral Form</a> and we
+                will be in contact with you as soon as possible. The form can be completed online.
+            </p>
+        </div>
     </div>
 
-    <div>
-      <!-- content -->
-      <h4 class="mt-6 fw-bold px-4 text-primary">
-        Want to join the club?
-      </h4>
-
-      <p class="my-2 px-4 ">
-        If you would like to join the club, follow the link or scan the QR code to fill out the <a class=""
-          href="https://forms.gle/W7tA3rm9ucTeb99r8">Referral Form</a> and we
-        will be in contact with you as soon as possible. The form can be completed online.
-      </p>
+    <div class="text-center">
+        <img class="QR" src="/img/ReferralQRCode.png" alt="Referall QR Code" width="192">
     </div>
-  </div>
 
-  <div class="text-center">
-    <img class="QR" src="/img/ReferralQRCode.png" alt="Referall QR Code" width="192">
-  </div>
-
-  <div id="footer-placeholder"></div>
+    <div id="footer-placeholder"></div>
 
 
-  <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Optional JavaScript; choose one of the two! -->
 
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
 
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
       -->
 
 </body>
 <script>
-  $(function () {
-    $("#nav-placeholder").load("/components/nav.html");
-  });
+    $(function () 
+    {
+        $("#nav-placeholder").load("/components/nav.html");
+    });
 
-  $(function () {
-    $("#footer-placeholder").load("/components/footer.html");
-  });
+    $(function () 
+    {
+        $("#footer-placeholder").load("/components/footer.html");
+    });
 
-  $(function () {
-    $("#donatebtn-placeholder").load("/components/donate.html");
-  });
+    $(function () 
+    {
+        $("#donatebtn-placeholder").load("/components/donate.html");
+    });
 
-  $(function () {
-    $("#upcoming-placeholder").load("/components/upcoming.html");
-  });
+    $(function () 
+    {
+        $("#upcoming-placeholder").load("/components/upcoming.html");
+    });
 </script>
 
 </html>
