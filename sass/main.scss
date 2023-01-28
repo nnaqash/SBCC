@@ -7,6 +7,7 @@ $dropdown-dark-bg:      $primary;
 $dropdown-dark-color:   $warning;
 $dropdown-min-width:    8rem;
 $dropdown-padding-y:    0;
+$display-font-weight: 600;
 
 .social:hover {
   color: #3c73ff;
@@ -20,34 +21,35 @@ $dropdown-padding-y:    0;
 /*  ##### ##### ##### ##### ##### ##### ##### ##### ##### */
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Pattaya&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
 
 :root {
-  --bs-body-font-family: "Merriweather Sans", sans-serif;
+  --bs-body-font-family: 'Roboto', sans-serif;
 }
 
 .head {
-  font-family: "Pattaya", sans-serif;
-  justify-self: center;
+  font-family: 'Roboto', sans-serif;
+  justify-self: center; 
+}
+
+body {
+  font-size: 1.5rem;
+}
+
+footer {
+  padding-bottom: 0px;
 }
 
 .hov:hover {
   background-color: #143ea4;
   text-decoration: none;
-  border-radius: 15px;
+  border-radius: 0.938rem;
 }
 
 .list {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-}
-
-small {
-  font-size: 14px;
-}
-
-footer {
-  padding-bottom: 0px;
 }
 
 .arrow {
@@ -62,7 +64,7 @@ ul {
 .container {
   padding-top: 6%;
   margin-left: 6rem;
-  max-width: 1500px;
+  max-width: 93.75rem;
 }
 
 .sidebar {
@@ -77,14 +79,14 @@ ul {
 
 .stickyTab {
   position: sticky;
-  top: 150px;
+  top: 9.375rem;
 
   .sideTabs {
     position: absolute;
     right: 7rem;
 
     #upcoming {
-      top: 50px;
+      top: 3.125rem;
       background-color: #00007e;
     }
   }
