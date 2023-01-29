@@ -42,9 +42,9 @@ footer {
 }
 
 .hov:hover {
-  background-color: #143ea4;
+  background-color: $info;
   text-decoration: none;
-  border-radius: 0.938rem;
+  border-radius: 0.9rem;
 }
 
 .list {
@@ -79,15 +79,15 @@ ul {
 
 .stickyTab {
   position: sticky;
-  top: 9.375rem;
+  top: 11rem;
 
   .sideTabs {
     position: absolute;
-    right: 7rem;
+    right: 4rem;
 
     #upcoming {
       top: 3.125rem;
-      background-color: #00007e;
+      background-color: $primary;
     }
   }
 }
